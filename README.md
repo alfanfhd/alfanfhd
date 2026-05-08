@@ -56,19 +56,13 @@
 
 ## 🚀 Featured Projects
 
-<div align="center">
+<div align="left">
 
-<a href="https://github.com/alfanfhd/aplikasi_jajanan">
-<img width="90%" src="https://github-readme-stats.vercel.app/api/pin/?username=alfanfhd&repo=aplikasi_jajanan&theme=tokyonight&hide_border=true&bg_color=0d1117"/>
-</a>
+- 🍔 **Aplikasi Jajanan** — Flutter POS app untuk transaksi & manajemen jajanan sekolah.
 
-<a href="https://github.com/alfanfhd/pwl_pos">
-<img width="90%" src="https://github-readme-stats.vercel.app/api/pin/?username=alfanfhd&repo=pwl_pos&theme=tokyonight&hide_border=true&bg_color=0d1117"/>
-</a>
+- 🧾 **PWL POS** — Sistem kasir modern berbasis Laravel.
 
-<a href="https://github.com/alfanfhd/backend_jajan">
-<img width="90%" src="https://github-readme-stats.vercel.app/api/pin/?username=alfanfhd&repo=backend_jajan&theme=tokyonight&hide_border=true&bg_color=0d1117"/>
-</a>
+- 🌐 **Backend Jajan** — Backend management system menggunakan PHP & MySQL.
 
 </div>
 

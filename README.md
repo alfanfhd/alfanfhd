@@ -58,21 +58,17 @@
 
 <div align="center">
 
-<img width="80%" src="https://capsule-render.vercel.app/api?type=rect&color=0:111827,100:1e3a8a&height=80&section=header&text=🍔%20Aplikasi%20Jajanan&fontSize=25&fontColor=ffffff"/>
+<a href="https://github.com/alfanfhd/aplikasi_jajanan">
+<img width="90%" src="https://github-readme-stats.vercel.app/api/pin/?username=alfanfhd&repo=aplikasi_jajanan&theme=tokyonight&hide_border=true&bg_color=0d1117"/>
+</a>
 
-Flutter POS app untuk transaksi & manajemen jajanan sekolah.
+<a href="https://github.com/alfanfhd/pwl_pos">
+<img width="90%" src="https://github-readme-stats.vercel.app/api/pin/?username=alfanfhd&repo=pwl_pos&theme=tokyonight&hide_border=true&bg_color=0d1117"/>
+</a>
 
-<br><br>
-
-<img width="80%" src="https://capsule-render.vercel.app/api?type=rect&color=0:111827,100:2563eb&height=80&section=header&text=🧾%20PWL%20POS&fontSize=25&fontColor=ffffff"/>
-
-Sistem kasir modern berbasis Laravel.
-
-<br><br>
-
-<img width="80%" src="https://capsule-render.vercel.app/api?type=rect&color=0:111827,100:0f766e&height=80&section=header&text=🌐%20Backend%20Jajan&fontSize=25&fontColor=ffffff"/>
-
-Backend management system menggunakan PHP & MySQL.
+<a href="https://github.com/alfanfhd/backend_jajan">
+<img width="90%" src="https://github-readme-stats.vercel.app/api/pin/?username=alfanfhd&repo=backend_jajan&theme=tokyonight&hide_border=true&bg_color=0d1117"/>
+</a>
 
 </div>
 

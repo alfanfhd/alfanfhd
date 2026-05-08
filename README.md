@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0f172a,100:2563eb&text=ALFAN%20FAHD&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0f172a,100:2563eb&text=ALFAN%20FHD&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38"/>
 
 # 👋 Hi, I'm Alfan
 

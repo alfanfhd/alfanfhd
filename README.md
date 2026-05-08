@@ -12,24 +12,6 @@
 
 ---
 
-<div align="center">
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=alfanfhd&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000"/>
-
-<img width="49%" src="https://streak-stats.demolab.com?user=alfanfhd&theme=tokyonight&hide_border=true&background=00000000"/>
-
-</div>
-
-<div align="center">
-
-<img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alfanfhd&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000"/>
-
-<img width="56%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=alfanfhd&theme=tokyonight"/>
-
-</div>
-
----
-
 ## ⚡ Tech Stack
 
 <div align="center">
@@ -40,31 +22,31 @@
 
 ---
 
+## 📊 GitHub Dashboard
+
+<div align="center">
+
+<img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=alfanfhd&theme=tokyonight"/>
+
+<img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=alfanfhd&theme=tokyonight&hide_border=true"/>
+
+</div>
+
+<div align="center">
+
+<img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=alfanfhd&theme=tokyonight"/>
+
+<img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=alfanfhd&theme=tokyonight"/>
+
+</div>
+
+---
+
 ## 📈 Contribution Graph
 
 <div align="center">
 
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=alfanfhd&theme=tokyo-night&hide_border=true&bg_color=0d1117"/>
-
-</div>
-
----
-
-## 🏆 Achievements
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=alfanfhd&theme=tokyonight&no-frame=true&row=1&column=7"/>
-
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg"/>
 
 </div>
 

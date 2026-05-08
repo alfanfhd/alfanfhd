@@ -1,20 +1,14 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:38bdf8&height=180&section=header&text=ALFAN%20FHD&fontSize=40&fontColor=ffffff&animation=fadeIn"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:0f172a,100:2563eb&text=ALFAN%20FAHD&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=38"/>
 
-# 👋 Hi, I'm Alfan
+# Hi 👋, I'm Alfan
 
-### 💻 Web Developer | 🚀 Flutter Enthusiast | ⚡ Backend Learner
+### Fullstack & Flutter Developer
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=22&duration=3000&color=38BDF8&center=true&vCenter=true&width=500&lines=Laravel+Developer;Flutter+Developer;Backend+Enthusiast;Always+Learning" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=20&duration=3000&color=3B82F6&center=true&vCenter=true&width=500&lines=Laravel+Developer;Flutter+Developer;Backend+Enthusiast" />
 
-</div>
-
----
-
-## 🚀 Tech Stack
-
-<div align="center">
+<br>
 
 <img src="https://skillicons.dev/icons?i=flutter,dart,php,laravel,html,css,js,mysql,firebase,git,github,vscode&theme=dark" />
 
@@ -22,38 +16,31 @@
 
 ---
 
-## 📊 GitHub Stats
-
 <div align="center">
 
-<img width="45%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=alfanfhd&theme=tokyonight"/>
-<img width="45%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alfanfhd&layout=compact&theme=tokyonight&hide_border=true"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=alfanfhd&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000"/>
+
+<img width="41%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alfanfhd&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000"/>
 
 </div>
 
 ---
 
-## 🔥 Contribution Graph
-
 <div align="center">
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=alfanfhd&theme=tokyo-night&hide_border=true"/>
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=alfanfhd&theme=tokyo-night&hide_border=true&bg_color=0d1117"/>
 
 </div>
 
 ---
 
-## 📌 Featured Projects
+# 🚀 Projects
 
-| Project | Description |
-|---|---|
-| 🍔 Aplikasi Jajanan | Flutter app untuk transaksi dan manajemen jajanan sekolah |
-| 🧾 PWL POS | Sistem kasir berbasis Laravel & Blade |
-| 🌐 Backend Jajan | Backend management system menggunakan PHP & MySQL |
+- 🍔 **Aplikasi Jajanan** — Flutter cashier application  
+- 🧾 **PWL POS** — Laravel POS system  
+- 🌐 **Backend Jajan** — PHP backend management  
 
 ---
-
-## 🌐 Connect With Me
 
 <div align="center">
 
@@ -69,16 +56,10 @@
 <img src="https://skillicons.dev/icons?i=gmail" />
 </a>
 
-</div>
+<br><br>
 
----
+> *"Code. Learn. Build."*
 
-<div align="center">
-
-> ✨ Code • Learn • Build • Repeat ✨
-
-<img src="https://komarev.com/ghpvc/?username=alfanfhd&label=Profile%20Views&color=38bdf8&style=for-the-badge" />
+<img src="https://komarev.com/ghpvc/?username=alfanfhd&style=for-the-badge&color=3b82f6"/>
 
 </div>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:38bdf8,100:0f172a&height=100&section=footer"/>

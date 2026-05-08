@@ -32,6 +32,8 @@
 
 </div>
 
+<br>
+
 <div align="center">
 
 <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=alfanfhd&theme=tokyonight"/>
@@ -54,11 +56,25 @@
 
 ## 🚀 Featured Projects
 
-| Project | Tech | Description |
-|---|---|---|
-| 🍔 Aplikasi Jajanan | Flutter | POS & transaksi jajanan sekolah |
-| 🧾 PWL POS | Laravel | Sistem kasir modern |
-| 🌐 Backend Jajan | PHP/MySQL | Backend management system |
+<div align="center">
+
+<img width="80%" src="https://capsule-render.vercel.app/api?type=rect&color=0:111827,100:1e3a8a&height=80&section=header&text=🍔%20Aplikasi%20Jajanan&fontSize=25&fontColor=ffffff"/>
+
+Flutter POS app untuk transaksi & manajemen jajanan sekolah.
+
+<br><br>
+
+<img width="80%" src="https://capsule-render.vercel.app/api?type=rect&color=0:111827,100:2563eb&height=80&section=header&text=🧾%20PWL%20POS&fontSize=25&fontColor=ffffff"/>
+
+Sistem kasir modern berbasis Laravel.
+
+<br><br>
+
+<img width="80%" src="https://capsule-render.vercel.app/api?type=rect&color=0:111827,100:0f766e&height=80&section=header&text=🌐%20Backend%20Jajan&fontSize=25&fontColor=ffffff"/>
+
+Backend management system menggunakan PHP & MySQL.
+
+</div>
 
 ---
 
@@ -86,6 +102,10 @@
 
 > ✨ *Code. Learn. Build. Repeat.*
 
+<br>
+
 <img src="https://komarev.com/ghpvc/?username=alfanfhd&style=for-the-badge&color=3b82f6"/>
 
 </div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:2563eb,100:0f172a"/>

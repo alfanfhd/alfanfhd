@@ -1,101 +1,233 @@
-<div align="center">
+# GitHub Profile 3D Contrib
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0f172a,100:2563eb&text=ALFAN%20FHD&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38"/>
+![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
 
-# 👋 Hi, I'm Alfan
+<!-- Language code order (except English) -->
+English (en) |
+[Deutsch (de)](docs/README.de.md) |
+[Español (es)](docs/README.es.md) |
+[Français (fr)](docs/README.fr.md) |
+[日本語 (ja)](docs/README.ja.md) |
+[한국어 (ko)](docs/README.ko.md) |
+[Português (pt-BR)](docs/README.pt-br.md) |
+[Português (pt)](docs/README.pt.md) |
+[Русский (ru)](docs/README.ru.md) |
+[简体中文 (zh-CN)](docs/README.zh-CN.md) |
+[繁體中文 (zh-TW)](docs/README.zh-TW.md) |
 
-### Fullstack Developer & Flutter Enthusiast
+<!--
+> [!NOTE]
+> This translation was generated with machine translation.
+> It may contain errors or unnatural expressions.
+> Contributions to improve the translation are welcome!
+ -->
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=22&duration=3000&color=3B82F6&center=true&vCenter=true&width=600&lines=Laravel+Developer;Flutter+Developer;Backend+Engineer;Always+Learning+New+Things" />
+## Overview
 
-</div>
+This GitHub Action creates a GitHub contribution calendar on a 3D profile image.
 
----
+## How to use (GitHub Actions) - Basic
 
-## ⚡ Tech Stack
+This GitHub Action generates your github profile 3d contribution calendar and commits to your repo.
+After adding the GitHub Action, the workflow runs automatically once a day.
+You can also trigger the workflow manually.
 
-<div align="center">
+### Step 1. Create special profile repository
 
-<img src="https://skillicons.dev/icons?i=flutter,dart,php,laravel,html,css,js,mysql,firebase,git,github,vscode,linux&theme=dark" />
+Create a repository on GitHub with the same name as your username.
 
-</div>
+- For example, if the username is `octocat`, create a repository named `octocat/octocat`.
+- See also: [Managing your profile README](https://docs.github.com/en/account-and-profile/how-tos/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
 
----
+In this repository, follow the steps below.
 
-## 📊 GitHub Dashboard
+### Step 2. Create workflow file
 
-<div align="center">
+Create a workflow file like the one below.
 
-<img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=alfanfhd&theme=tokyonight"/>
+- `.github/workflows/profile-3d.yml`
 
-<img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=alfanfhd&theme=tokyonight&hide_border=true"/>
+```yaml:.github/workflows/profile-3d.yml
+name: GitHub-Profile-3D-Contrib
 
-</div>
+on:
+  schedule: # 03:00 JST == 18:00 UTC
+    - cron: "0 18 * * *"
+  workflow_dispatch:
 
-<br>
+permissions:
+  contents: write
 
-<div align="center">
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v5
+      - uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          if git commit -m "generated"; then
+            git push
+          fi
+```
 
-<img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=alfanfhd&theme=tokyonight"/>
+> [!NOTE]
+> You can change your GitHub settings to include contributions from private repositories. To change this setting, click `Contribution settings` in the top right of the standard contribution calendar, or click your icon in the top right of the screen, select `Settings` ⇒ `Public profile` ⇒ `Contributions & Activity`, and check `Include private contributions on my profile`.
+>
+> If you want to include additional activities from private repositories, register a personal access token as a secret and set it to the `GITHUB_TOKEN` environment variable in the workflow file. However, in most cases the default `secrets.GITHUB_TOKEN` is sufficient.
 
-<img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=alfanfhd&theme=tokyonight"/>
+The schedule is set to run once a day by default.
+You can change the scheduled time as you like.
 
-</div>
+This will add the workflow to your repository.
 
----
+#### Environment variables
 
-## 📈 Contribution Graph
+In the sample, only `GITHUB_TOKEN` and `USERNAME` are specified as environment variables, but you can specify the following environment variables:
 
-<div align="center">
+- `GITHUB_TOKEN` : (required) access token
+- `USERNAME` : (required) target username (or specify with an argument).
+- `MAX_REPOS` : (optional) max repositories, default 100 - since ver. 0.2.0
+- `SETTING_JSON` : (optional) settings json file path. See `sample-settings/*.json` and `src/type.ts` in `yoshi389111/github-profile-3d-contrib` repository for details. - since ver. 0.6.0
+- `GITHUB_ENDPOINT` : (optional) Github GraphQL endpoint. For example, if you want to create a contribution calendar based on your company's GitHub Enterprise activity instead of GitHub.com, set this environment variable. e.g. `https://github.mycompany.com/api/graphql` - since ver. 0.8.0
+- `YEAR` : (optional) For past calendars, specify the year. This is intended to be specified when running the tool from the command line. - since ver. 0.8.0
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=alfanfhd&theme=tokyo-night&hide_border=true&bg_color=0d1117"/>
+#### About `GITHUB_TOKEN`
 
-</div>
+The `secrets.GITHUB_TOKEN` set in the `GITHUB_TOKEN` environment variable in the sample is a special access token automatically created by GitHub.
 
----
+- GitHub Docs: [Use GITHUB_TOKEN for authentication in workflows](https://docs.github.com/en/actions/tutorials/authenticate-with-github_token)
 
-## 🚀 Featured Projects
+If you want to generate a contribution calendar for public repositories only, use this value.
+There is no need to create a secret manually.
 
-<div align="left">
+Also, if you want to include activity in your private repositories in your contribution calendar, check "Include private contributions on my profile" in the "Profile settings" section of "Public profile" in your profile settings.
 
-- 🍔 **Aplikasi Jajanan** — Flutter POS app untuk transaksi & manajemen jajanan sekolah.
+Furthermore, if you want to include additional activity information from private repositories, create an access token with the appropriate permissions.
+Register that access token as a secret with any name you like (For example, `MY_PERSONAL_ACCESS_TOKEN`).
+However, please note that user-created secrets cannot start with `GITHUB_`.
 
-- 🧾 **PWL POS** — Sistem kasir modern berbasis Laravel.
+- GitHub Docs: [Secrets](https://docs.github.com/en/actions/concepts/security/secrets)
 
-- 🌐 **Backend Jajan** — Backend management system menggunakan PHP & MySQL.
+Set that secret as the value of the `GITHUB_TOKEN` environment variable.
 
-</div>
+```diff
+          env:
+-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
++           GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
+            USERNAME: ${{ github.repository_owner }}
+```
 
----
+#### About the time to schedule
 
-## 🌐 Connect With Me
+In the sample, it is set to start at 18:00 UTC.
+This is because it will run at midnight JST, which is the author's local time.
 
-<div align="center">
+```yaml
+on:
+  schedule: # 03:00 JST == 18:00 UTC
+    - cron: "0 18 * * *"
+```
 
-<a href="https://github.com/alfanfhd">
-<img src="https://skillicons.dev/icons?i=github" />
-</a>
+You can change it to any time you like.
+We recommend midnight (around 3am) your local time.
+However, please note that the time must be specified in UTC.
 
-<a href="https://instagram.com/USERNAME">
-<img src="https://skillicons.dev/icons?i=instagram" />
-</a>
+### Step 3. Manually run this GitHub Action
 
-<a href="mailto:yourmail@gmail.com">
-<img src="https://skillicons.dev/icons?i=gmail" />
-</a>
+The first time, run this workflow manually.
 
-</div>
+- `Actions` -> `GitHub-Profile-3D-Contrib` -> `Run workflow`
 
----
+The profile images are generated at the following paths:
 
-<div align="center">
+- `profile-3d-contrib/profile-green-animate.svg`
+- `profile-3d-contrib/profile-green.svg`
+- `profile-3d-contrib/profile-season-animate.svg`
+- `profile-3d-contrib/profile-season.svg`
+- `profile-3d-contrib/profile-south-season-animate.svg`
+- `profile-3d-contrib/profile-south-season.svg`
+- `profile-3d-contrib/profile-night-view.svg`
+- `profile-3d-contrib/profile-night-green.svg`
+- `profile-3d-contrib/profile-night-rainbow.svg`
+- `profile-3d-contrib/profile-gitblock.svg`
 
-> ✨ *Code. Learn. Build. Repeat.*
+If you specify the `SETTING_JSON` environment variable without a `fileName` property in the json file, the following image will be generated:
 
-<br>
+- `profile-3d-contrib/profile-customize.svg`
 
-<img src="https://komarev.com/ghpvc/?username=alfanfhd&style=for-the-badge&color=3b82f6"/>
+You can use these images in your README.md as shown below.
 
-</div>
+Example: green version
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:2563eb,100:0f172a"/>
+![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-green-animate.svg)
+
+Example: season version (Northern Hemisphere.)
+
+![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-season-animate.svg)
+
+Example: season version (Southern Hemisphere.)
+
+![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-south-season-animate.svg)
+
+Example: night view version
+
+![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-view.svg)
+
+Example: night green version
+
+![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-green.svg)
+
+Example: night rainbow version
+
+![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-night-rainbow.svg)
+
+Example: git block version
+
+![svg](https://raw.githubusercontent.com/yoshi389111/github-profile-3d-contrib/main/docs/demo/profile-gitblock.svg)
+
+### Step 4. Add image to README.md
+
+Add the path to the generated image in your README file.
+
+Example:
+
+```md
+![](./profile-3d-contrib/profile-green-animate.svg)
+```
+
+## How to use (GitHub Actions) - Advanced examples
+
+- [More info in EXAMPLES.md](./EXAMPLES.md)
+
+## How to use (local)
+
+Set the `GITHUB_TOKEN` environment variable to your personal access token.
+
+```sh
+export GITHUB_TOKEN=XXXXXXXXXXXXXXXXXXXXX
+```
+
+Run the following command, replacing `USER_NAME` with your GitHub username or the target username.
+
+```sh
+node_modules/.bin/ts-node src/index.ts USER_NAME
+```
+
+or
+
+```sh
+npm run build
+node . USER_NAME
+```
+
+## License
+
+&copy; 2021 SATO Yoshiyuki. Licensed under the MIT License.
